@@ -100,6 +100,78 @@ dataset:
  
 
 * To organize the folder in the expected structure, you need to get the bash script that does it for you, type in your terminal :
+```bash
+wget https://raw.githubusercontent.com/dellemc-hpc-ai/satellite_imagery_demo/master/organize.sh
 ```
-wget 
+
+* Run the script(ensure you're inside the ``dataset`` folder):
+```bash
+bash organize.sh
 ```
+
+You must see the folder structure output that looks like this:
+```bash
+dataset:
+    * 102.tif  
+    * 1036.tif 
+    * 1037.tif 
+    * 1042.tif
+    * sample_train_images/
+        *(108.tif,102.tif,.,.,.,.,.,.,..,...,....tif) -- Images that are extracted
+    * train_images.tgz
+    * train_labels.tgz
+    * xView_train.geojson
+```  
+* You're now ready for running the jupyter notebook.
+
+
+### Step 5. Run the Container  
+
+* To run the container, first get the bash script to run the container, you need to clone the repo
+in a new folder (not inside the ``dataset`` folder): 
+
+```bash
+git clone https://github.com/dellemc-hpc-ai/satellite_imagery_demo.git
+```
+
+* cd into the ``satellite_imagery_demo`` folder
+
+```bash
+cd satellite_imagery_demo
+```
+
+* Edit and save the ``run-satellite.sh`` script to point it to your dataset location.
+```bash
+vim run-satellite.sh
+``` 
+
+* Here is how you'd edit the script:
+```bash
+# lets say your usename is doe and your dataset folder is in your desktop. 
+# Here is how you'd change it. 
+
+# docker run --rm  \
+#         -p 8888:8888 \
+#         -v /home/doe/Desktop/dataset:/home/jovyan/xview \
+#         --name "satellite-imaging" \
+#         dellemchpcai/satellite_demo:latest
+
+```
+
+``` bash
+# Now go ahead, change the dataset path
+docker run --rm  \
+        -p 8888:8888 \
+        -v /path/to/your/dataset:/home/jovyan/xview \
+        --name "satellite-imaging" \
+        dellemchpcai/satellite_demo:latest
+```
+
+* Finally, here is the time you've been waiting for: to run the jupyter notebook:
+```bash 
+bash run_satellite.sh
+``` 
+
+### Step 6. Run the demo - (shift + enter through the cells of jupyter notebook)
+
+`
