@@ -113,10 +113,9 @@ bash organize.sh
 You must see the folder structure output that looks like this:
 ```bash
 dataset:
-    * 102.tif  
-    * 1036.tif 
-    * 1037.tif 
-    * 1042.tif
+    * 1038.tif  
+    * 1075.tif 
+    * 108.tif 
     * sample_train_images/
         *(102.tif, 1036.tif, 1037.tif, 1042.tif) -- Images that are extracted and not needed are deleted.
     * train_labels.tgz
