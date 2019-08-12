@@ -140,9 +140,9 @@ git clone https://github.com/dellemc-hpc-ai/satellite_imagery_demo.git
 cd satellite_imagery_demo
 ```
 
-* Edit and save the ``run-satellite.sh`` script to point it to your dataset location.
+* Edit and save the ``run_satellite.sh`` script to point it to your dataset location.
 ```bash
-vim run-satellite.sh
+vim run_satellite.sh
 ``` 
 
 * Here is how you'd edit the script:
