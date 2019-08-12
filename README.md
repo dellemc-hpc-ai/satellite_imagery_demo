@@ -76,8 +76,8 @@ https://challenge.xviewdataset.org/data-download
 
 * Create a new folder called ``dataset``. It is important for the folder to be called the same. 
 
-* You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training labels``,``Validation Images``. 
-To Download, right click and choose ``save link as`` and download both files into the ``dataset`` folder.
+* You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training Images``,  ``Training labels`` & ``Validation Images``. 
+To Download, right click and choose ``save link as`` and download all the files into the ``dataset`` folder.
 ![alt text](images/save_link_tar.png)
 
 
@@ -90,10 +90,11 @@ https://arxiv.org/abs/1802.07856
 ### Step 4. Organizing the dataset folder 
 * The folder contents must be in a certain structure for the demo jupyter notebook to run.
 
-* Once you have downloaded these two files, your ``dataset`` must have only 2 files:
+* Once you have downloaded these two files, your ``dataset`` must have only 3 files:
 
 ```
 dataset:
+    * train_images.tgz
     * train_labels.tgz
     * val_images.tgz
 ```
@@ -117,7 +118,7 @@ dataset:
     * 1037.tif 
     * 1042.tif
     * sample_train_images/
-        *(108.tif,102.tif,.,.,.,.,.,.,..,...,....tif) -- Images that are extracted
+        *(102.tif, 1036.tif, 1037.tif, 1042.tif) -- Images that are extracted and not needed are deleted.
     * train_labels.tgz
     * xView_train.geojson
     * val_images.tgz
@@ -205,7 +206,7 @@ That looks something like this:
 ![alt text](images/after_detection.png)
 Yay! so you're now able to do run xview object detection inference on **CPU**.
 
-* It's hard to make sense of this image, you can enlarge this image by viewing it raw. To view it raw, you can go to 
+* It's hard to make sense of this image, you can enlarge this image by viewing it raw. To do so, you can go to 
 the access link you clicked few steps back & open the ``preds_output`` folder. Inside the folder, open the image file
 named ``108.png``. It should open in the browser as a raw image as seen below.
 ![alt text](images/bigger_image.png)
