@@ -27,7 +27,7 @@ This demo is validated on a Dell PowerEdge C4130 system having the following spe
 * Docker 1.13.1
 * Git 1.8.3.1 
 
-If you want a detailed spec about the system this demo is validated on, please check [here](hwinfo.html "Hardware Spec Info"). 
+If you want a detailed spec about the system this demo is validated on, please check [here](https://htmlpreview.github.io/?https://raw.githubusercontent.com/dellemc-hpc-ai/yolo_demo/master/hwinfo.html "Hardware Spec Info"). 
 
 
 ### Step 2. Ensure Prerequisites
