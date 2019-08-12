@@ -181,10 +181,36 @@ The output must look like this after executing the script ``run_satellite.sh``
   
 
 * Control + Click on the access link to open it in a browser, in this case the access link is as follows.
-```python
+```
 http://127.0.0.1:8888/?token=319b9b8c59d5c65aeac45f8b4116e217b901186013d01226
 ```  
 
+* Once you open the link, the browser's would contain 2 folders as follows: You need to click on ``xview``
+![alt text](images/after_link_click.png)
+
+* ``xview`` contains a bunch of files including ``ObjectDetection_OverheadImagery.ipynb``. Click on the same. 
+This pops open a jupyter notebook instance. 
+![alt text](images/choosing_notebook.png)
+
+* This jupyter notebook contains already executed cells. You can scroll through the notebook and 
+just check the outputs already generated. However, if you want to run the cells yourself, you can 
+either execute the notebook by executing the individual cell using ``shift + enter``. Or as seen in the image below 
+you may execute the whole notebook at once by going to ``Kernel`` and choosing ``Restart & Run All``. This may take 
+sometime depending on your system.            
+![alt text](images/restart_run_all.png)
+
+
+* Once you've completed the execution, if you scroll to the bottom of the notebook, you must see the inferred output.
+That looks something like this:
+![alt text](images/after_detection.png)
+Yay! so you're now able to do run xview object detection inference on **CPU**.
+
+* It's hard to make sense of this image, you can enlarge this image by viewing it raw. To view it raw, you can go to 
+the access link you clicked few steps back & open the ``preds_output`` folder. Inside the folder, open the image file
+named ``108.png``. It should open in the browser as a raw image as seen below.
+![alt text](images/bigger_image.png)
+ 
+ 
 
 
 
