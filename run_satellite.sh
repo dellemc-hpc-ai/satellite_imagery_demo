@@ -7,7 +7,7 @@
 # Here is how you'd change it. 
 # docker run --rm  \
 #         -p 8888:8888 \
-#         -v /home/doe/Desktop/dataset:/home/jovyan/xview \
+#         -v /home/doe/Desktop/dataset:/home/jovyan/xview/dataset \
 #         --name "satellite-imaging" \
 #         dellemchpcai/satellite_demo:latest
 

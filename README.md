@@ -217,7 +217,7 @@ named ``108.png``. It should open in the browser as a raw image as seen below.
 * Congrats! you're now able to run the xview object detection demo.
 * To close the running instance of the jupyter notebook, you can ``ctrl + c`` to exit it out.
 * You might ask why the dataset wasn't included in the container? It's mostly because of licensing concerns.  
-
+* The container is hosted at [dockerhub](https://hub.docker.com/r/dellemchpcai/satellite_demo).
 
   
 
