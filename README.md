@@ -101,7 +101,7 @@ dataset:
 
 * To organize the folder in the expected structure, you need to get the bash script that does it for you, type in your terminal :
 ```bash
-wget https://raw.githubusercontent.com/dellemc-hpc-ai/satellite_imagery_demo/master/organize.sh
+wget https://raw.githubusercontent.com/dellemc-hpc-ai/satellite_imagery_demo/master/organize.sh 
 ```
 
 * Run the script (ensure you're inside the ``dataset`` folder):
