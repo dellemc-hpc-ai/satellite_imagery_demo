@@ -100,7 +100,7 @@ dataset:
 ```
  
 
-* To organize the folder in the expected structure, you need to get the bash script that does it for you, type in your terminal :
+* To organize the folder in the expected structure, you need to get the bash script that does it for you, type in your terminal :(This is needed to be run just once while setting up the demo)
 ```bash
 wget https://raw.githubusercontent.com/dellemc-hpc-ai/satellite_imagery_demo/master/organize.sh 
 ```
@@ -186,7 +186,7 @@ The output must look like this after executing the script ``run_satellite.sh``
 http://127.0.0.1:8888/?token=319b9b8c59d5c65aeac45f8b4116e217b901186013d01226
 ```  
 
-* Once you open the link, the browser's would contain 2 folders as follows: You need to click on ``xview``
+* Once you open the link, it would contain 2 folders as follows: You need to click on ``xview``
 ![alt text](images/after_link_click.png)
 
 * ``xview`` folder contains a bunch of files including ``ObjectDetection_OverheadImagery.ipynb``. Click on the same. 
@@ -219,7 +219,7 @@ named ``108.png``. It should open in the browser as a raw image as seen below.
 * To close the running instance of the jupyter notebook, you can ``ctrl + c`` to exit it out.
 * You might ask why the dataset wasn't included in the container? It's mostly because of licensing concerns.  
 * The container is hosted at [dockerhub](https://hub.docker.com/r/dellemchpcai/satellite_demo).
-
+* To run the demo further on, you can just do the following in your terminal: ``bash run_satellite.sh``, you don't need to run ``organize.sh`` everytime you run the demo.  
   
 
 
