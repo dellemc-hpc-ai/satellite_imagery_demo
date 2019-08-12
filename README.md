@@ -167,12 +167,26 @@ docker run --rm  \
         dellemchpcai/satellite_demo:latest
 ```
 
+### Step 6. Run the demo - (shift + enter through the cells of jupyter notebook)
+
 * Finally, here is the time you've been waiting for: to run the jupyter notebook:
 ```bash 
 bash run_satellite.sh
-``` 
+```
+* Once you run the bash script, the output on your terminal would contain instructions to access files in the container if you're interested. 
+However, the if you notice at the end, there would be a link to your localhost to access the jupyter notebook along with the access token. 
+   
+![alt text](images/after_execution.png)
+The output must look like this after executing the script ``run_satellite.sh``
+  
 
-### Step 6. Run the demo - (shift + enter through the cells of jupyter notebook)
+* Control + Click on the access link to open it in a browser, in this case the access link is as follows.
+```python
+http://127.0.0.1:8888/?token=319b9b8c59d5c65aeac45f8b4116e217b901186013d01226
+```  
+
+
+
 
   
 
