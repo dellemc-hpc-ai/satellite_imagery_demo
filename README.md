@@ -188,7 +188,7 @@ http://127.0.0.1:8888/?token=319b9b8c59d5c65aeac45f8b4116e217b901186013d01226
 * Once you open the link, the browser's would contain 2 folders as follows: You need to click on ``xview``
 ![alt text](images/after_link_click.png)
 
-* ``xview`` contains a bunch of files including ``ObjectDetection_OverheadImagery.ipynb``. Click on the same. 
+* ``xview`` folder contains a bunch of files including ``ObjectDetection_OverheadImagery.ipynb``. Click on the same. 
 This pops open a jupyter notebook instance. 
 ![alt text](images/choosing_notebook.png)
 
@@ -209,9 +209,14 @@ Yay! so you're now able to do run xview object detection inference on **CPU**.
 the access link you clicked few steps back & open the ``preds_output`` folder. Inside the folder, open the image file
 named ``108.png``. It should open in the browser as a raw image as seen below.
 ![alt text](images/bigger_image.png)
- 
- 
 
+ 
+ 
+# Conclusion
+
+* Congrats! you're now able to run the xview object detection demo.
+* To close the running instance of the juoyter notebook, you can ``ctrl + c`` to exit it out.
+* You might ask why the dataset wasn't included in the container? It's mostly because of licensing concerns.  
 
 
   
