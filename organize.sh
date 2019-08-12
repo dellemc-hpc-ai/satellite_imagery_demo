@@ -3,7 +3,7 @@
 #!/bin/bash
 
 mkdir sample_train_images
-tar -xvf train_images.tgz -C sample_train_images
+tar -xvf val_images.tgz -C sample_train_images
 cd sample_train_images
 mv train_images/* .
 cp 1038.tif ../

@@ -76,8 +76,8 @@ https://challenge.xviewdataset.org/data-download
 
 * Create a new folder called ``dataset``. It is important for the folder to be called the same. 
 
-* You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training Images``,``val and 
-``Training Labels``. To Download, right click and choose ``save link as`` and download both files into the ``dataset`` folder.
+* You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training labels``,``Validation Images``. 
+To Download, right click and choose ``save link as`` and download both files into the ``dataset`` folder.
 ![alt text](images/save_link_tar.png)
 
 
@@ -94,8 +94,8 @@ https://arxiv.org/abs/1802.07856
 
 ```
 dataset:
-    * train_images.tgz
     * train_labels.tgz
+    * val_images.tgz
 ```
  
 
