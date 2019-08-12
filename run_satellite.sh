@@ -14,7 +14,7 @@
 # Now go ahead, change the dataset path
 docker run --rm  \
         -p 8888:8888 \
-        -v /path/to/your/dataset:/home/jovyan/xview \
+        -v /path/to/your/dataset:/home/jovyan/xview/dataset \
         --name "satellite-imaging" \
         dellemchpcai/satellite_demo:latest
 

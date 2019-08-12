@@ -39,12 +39,12 @@ If you don't have docker installed, the following links explains how to install 
  
 
 For Centos 
-```
+```bash
 https://docs.docker.com/install/linux/docker-ce/centos/
 ```
 
 For Ubunutu 
-```
+```bash
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ```
 
@@ -52,7 +52,7 @@ https://docs.docker.com/install/linux/docker-ce/ubuntu/
 ### Step 3. Getting the dataset  
 
 * Create an account at the Xview website to download the dataset. 
-```
+```bash
 https://challenge.xviewdataset.org/signup
 ```
 
@@ -66,7 +66,7 @@ https://challenge.xviewdataset.org/signup
 
 If for some reason if you can't find it, go to the following link below:
 
-```
+```bash
 https://challenge.xviewdataset.org/data-download
 ```
 
@@ -83,7 +83,7 @@ https://challenge.xviewdataset.org/data-download
 
 * (optional step) If you're interested in how DUIx collected the dataset and their baseline model performance, you may read their paper here:
 
-```
+```bash
 https://arxiv.org/abs/1802.07856
 ```
 
@@ -104,7 +104,7 @@ dataset:
 wget https://raw.githubusercontent.com/dellemc-hpc-ai/satellite_imagery_demo/master/organize.sh
 ```
 
-* Run the script(ensure you're inside the ``dataset`` folder):
+* Run the script (ensure you're inside the ``dataset`` folder):
 ```bash
 bash organize.sh
 ```
@@ -152,7 +152,7 @@ vim run-satellite.sh
 
 # docker run --rm  \
 #         -p 8888:8888 \
-#         -v /home/doe/Desktop/dataset:/home/jovyan/xview \
+#         -v /home/doe/Desktop/dataset:/home/jovyan/xview/dataset \
 #         --name "satellite-imaging" \
 #         dellemchpcai/satellite_demo:latest
 
@@ -162,7 +162,7 @@ vim run-satellite.sh
 # Now go ahead, change the dataset path
 docker run --rm  \
         -p 8888:8888 \
-        -v /path/to/your/dataset:/home/jovyan/xview \
+        -v /path/to/your/dataset:/home/jovyan/xview/dataset \
         --name "satellite-imaging" \
         dellemchpcai/satellite_demo:latest
 ```
@@ -174,4 +174,6 @@ bash run_satellite.sh
 
 ### Step 6. Run the demo - (shift + enter through the cells of jupyter notebook)
 
-`
+  
+
+
