@@ -123,7 +123,7 @@ dataset:
     * xView_train.geojson
     * val_images.tgz
 ```  
-* You're now ready for running the jupyter notebook.
+* You're now ready to run the jupyter notebook.
 
 
 ### Step 5. Run the Container  
