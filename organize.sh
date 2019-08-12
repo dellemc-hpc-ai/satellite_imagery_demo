@@ -5,7 +5,7 @@
 mkdir sample_train_images
 tar -xvf val_images.tgz -C sample_train_images
 cd sample_train_images
-mv train_images/* .
+mv val_images/* .
 cp 1038.tif ../
 cp 1075.tif ../ 
 cp 108.tif ../

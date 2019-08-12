@@ -118,9 +118,9 @@ dataset:
     * 1042.tif
     * sample_train_images/
         *(108.tif,102.tif,.,.,.,.,.,.,..,...,....tif) -- Images that are extracted
-    * train_images.tgz
     * train_labels.tgz
     * xView_train.geojson
+    * val_images.tgz
 ```  
 * You're now ready for running the jupyter notebook.
 
