@@ -8,7 +8,7 @@ baseline model.
 
 ![xview demo](images/example_labeled.jpg)
 
-Credits : https://challenge.xviewdataset.org/data-download
+Image Credits : https://challenge.xviewdataset.org/data-download
 
 ### Step 1. Check Validation System Specifications
 
