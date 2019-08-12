@@ -6,9 +6,9 @@ mkdir sample_train_images
 tar -xvf train_images.tgz -C sample_train_images
 cd sample_train_images
 mv train_images/* .
-cp sample_train_images/1038.tif ../
-cp sample_train_images/1075.tif ../ 
-cp sample_train_images/108.tif ../
+cp 1038.tif ../
+cp 1075.tif ../ 
+cp 108.tif ../
 cd ../
 tar -xvf train_labels.tgz
 

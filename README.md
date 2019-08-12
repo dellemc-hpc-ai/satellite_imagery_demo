@@ -76,7 +76,7 @@ https://challenge.xviewdataset.org/data-download
 
 * Create a new folder called ``dataset``. It is important for the folder to be called the same. 
 
-* You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training Images`` and 
+* You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training Images``,``val and 
 ``Training Labels``. To Download, right click and choose ``save link as`` and download both files into the ``dataset`` folder.
 ![alt text](images/save_link_tar.png)
 
@@ -173,8 +173,8 @@ docker run --rm  \
 ```bash 
 bash run_satellite.sh
 ```
-* Once you run the bash script, the output on your terminal would contain instructions to access files in the container if you're interested. 
-However, the if you notice at the end, there would be a link to your localhost to access the jupyter notebook along with the access token. 
+* Once you run the bash script, the output on your terminal would contain instructions to access files in the container. 
+However, if you notice at the end, there would be a link to your localhost to access the jupyter notebook along with the access token. 
    
 ![alt text](images/after_execution.png)
 The output must look like this after executing the script ``run_satellite.sh``
