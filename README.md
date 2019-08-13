@@ -74,8 +74,8 @@ https://challenge.xviewdataset.org/data-download
 
 * Create a new folder called **``dataset``**. It is important for the folder to be called the same. 
 
-* You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training Images``,  ``Training labels`` & ``Validation Images``. 
-To Download, right click and choose ``save link as`` and download all the files into the ``dataset`` folder.
+* You'll be presented with a page that contains links to **``TAR Files``**. You'll need to download **``Training Images``**,  **``Training labels``** &**``Validation Images``**. 
+To Download, right click and choose **``save link as``** and download all the files into the **``dataset``** folder.
 ![alt text](images/save_link_tar.png)
 
 
@@ -88,7 +88,7 @@ https://arxiv.org/abs/1802.07856
 ### Step 4. Organizing the dataset folder 
 * The folder contents must be in a certain structure for the demo jupyter notebook to run.
 
-* Once you have downloaded these two files, your ``dataset`` must have only 3 files:
+* Once you have downloaded these two files, your **``dataset``** must have only 3 files:
 
 ```
 dataset:
@@ -103,7 +103,7 @@ dataset:
 wget https://raw.githubusercontent.com/dellemc-hpc-ai/satellite_imagery_demo/master/organize.sh 
 ```
 
-* Run the script (ensure you're inside the ``dataset`` folder):
+* Run the script (ensure you're inside the **``dataset``** folder):
 ```bash
 bash organize.sh
 ```
@@ -126,7 +126,7 @@ dataset:
 ### Step 5. Run the Container  
 
 * To run the container, first get the bash script to run the container, you need to clone the repo
-in a new folder (not inside the ``dataset`` folder): 
+in a new folder (not inside the **``dataset``** folder): 
 
 ```bash
 git clone https://github.com/dellemc-hpc-ai/satellite_imagery_demo.git
@@ -138,7 +138,7 @@ git clone https://github.com/dellemc-hpc-ai/satellite_imagery_demo.git
 cd satellite_imagery_demo
 ```
 
-* Edit and save the ``run_satellite.sh`` script to point it to your dataset location.
+* Edit and save the **``run_satellite.sh``** script to point it to your dataset location.
 ```bash
 vim run_satellite.sh
 ``` 
@@ -175,7 +175,7 @@ bash run_satellite.sh
 However, if you notice at the end, there would be a link to your localhost to access the jupyter notebook along with the access token. 
    
 ![alt text](images/after_execution.png)
-The output must look like this after executing the script ``run_satellite.sh``
+The output must look like this after executing the script **``run_satellite.sh``**
   
 
 * Control + Click on the access link to open it in a browser, in this case the access link is as follows.
@@ -183,17 +183,17 @@ The output must look like this after executing the script ``run_satellite.sh``
 http://127.0.0.1:8888/?token=319b9b8c59d5c65aeac45f8b4116e217b901186013d01226
 ```  
 
-* Once you open the link, it would contain 2 folders as follows: You need to click on ``xview``
+* Once you open the link, it would contain 2 folders as follows: You need to click on **``xview``**
 ![alt text](images/after_link_click.png)
 
-* ``xview`` folder contains a bunch of files including ``ObjectDetection_OverheadImagery.ipynb``. Click on the same. 
+* ``xview`` folder contains a bunch of files including **``ObjectDetection_OverheadImagery.ipynb``**. Click on the same. 
 This pops open a jupyter notebook instance. 
 ![alt text](images/choosing_notebook.png)
 
 * This jupyter notebook contains already executed cells. You can scroll through the notebook and 
 just check the outputs already generated. However, if you want to run the cells yourself, you can 
-either execute the notebook by executing the individual cell using ``shift + enter``. Or as seen in the image below 
-you may execute the whole notebook at once by going to ``Kernel`` and choosing ``Restart & Run All``. This may take 
+either execute the notebook by executing the individual cell using **``shift + enter``**. Or as seen in the image below 
+you may execute the whole notebook at once by going to **``Kernel``** and choosing **``Restart & Run All``**. This may take 
 sometime depending on your system.            
 ![alt text](images/restart_run_all.png)
 
@@ -204,8 +204,8 @@ That looks something like this:
 Yay! so you're now able to do run xview object detection inference on **CPU**.
 
 * It's hard to make sense of this image, you can enlarge this image by viewing it raw. To do so, you can go to 
-the access link you clicked few steps back & open the ``preds_output`` folder. Inside the folder, open the image file
-named ``108.png``. It should open in the browser as a raw image as seen below.
+the access link you clicked few steps back & open the **``preds_output``** folder. Inside the folder, open the image file
+named **``108.png``**. It should open in the browser as a raw image as seen below.
 ![alt text](images/bigger_image.png)
 
  
@@ -213,10 +213,10 @@ named ``108.png``. It should open in the browser as a raw image as seen below.
 # Conclusion
 
 * Congrats! you're now able to run the xview object detection demo.
-* To close the running instance of the jupyter notebook, you can ``ctrl + c`` to exit it out.
+* To close the running instance of the jupyter notebook, you can **``ctrl + c``** to exit it out.
 * You might ask why the dataset wasn't included in the container? It's mostly because of licensing concerns.  
 * The container is hosted at [dockerhub](https://hub.docker.com/r/dellemchpcai/satellite_demo).
-* To run the demo further on, you can just do the following in your terminal: ``bash run_satellite.sh``, you don't need to run ``organize.sh`` everytime you run the demo.  
+* To run the demo further on, you can just do the following in your terminal: **``bash run_satellite.sh``**, you don't need to run **``organize.sh``** everytime you run the demo.  
   
 
 
