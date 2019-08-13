@@ -72,7 +72,7 @@ https://challenge.xviewdataset.org/data-download
 "I AGREE, PROCEED TO DOWNLOAD"
 ![alt text](images/agree_agreement.PNG)
 
-* Create a new folder called ``dataset``. It is important for the folder to be called the same. 
+* Create a new folder called **``dataset``**. It is important for the folder to be called the same. 
 
 * You'll be presented with a page that contains links to ``TAR Files``. You'll need to download ``Training Images``,  ``Training labels`` & ``Validation Images``. 
 To Download, right click and choose ``save link as`` and download all the files into the ``dataset`` folder.
