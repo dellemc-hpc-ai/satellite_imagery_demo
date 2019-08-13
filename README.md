@@ -219,4 +219,6 @@ named ``108.png``. It should open in the browser as a raw image as seen below.
 * To run the demo further on, you can just do the following in your terminal: ``bash run_satellite.sh``, you don't need to run ``organize.sh`` everytime you run the demo.  
   
 
+<p>Some Markdown text with <span style="color:blue">some <em>blue</em> text</span>.</p>
+
 
