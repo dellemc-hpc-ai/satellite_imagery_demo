@@ -178,7 +178,7 @@ However, if you notice at the end, there would be a link to your localhost to ac
 The output must look like this after executing the script **``run_satellite.sh``**
   
 
-* Control + Click on the access link to open it in a browser, in this case the access link is as follows.
+* Control + Click on the access link to open it in a browser, in this case the access link is as follows(Access token keeps changing everytime you load it).
 ```
 http://127.0.0.1:8888/?token=319b9b8c59d5c65aeac45f8b4116e217b901186013d01226
 ```  
